@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the home page">
+    <link rel="stylesheet" href="../static/home.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Medex</h1>
+    </div>
+    <div class = wrapper>
+      <ul class="nav-area">
+        <li><a class="link register-link" href="register">REGISTER</a></li>
+        <li><a class="link about-link" href="about">ABOUT</a></li>
+        <li><a class="link why-link" href="why/">WHY</a></li>
+        {% if request.user.is_authenticated%}
+          <li>Hello, {{user.first_name}}</li>
+          <li><a href="logout" class="link logout-link">LOGOUT</a></li>
+        {%else %}
+          <li><a class="link login-link" href="login">LOGIN</a></li>
+        {%endif%} 
+      </ul>
+    </div>
+    <div class="main-body">
+      <h1 >Medex</h1>
+      <h4>A platform to donate extra, unused masks and unexpired medicines.</h4>
+      <p class="para para-1">Medex is a platform created to donate unused and unexpired medicine to the unprivileged people on India. Hospitals are beyond the reach of several poor people in India due to financial reasons and this has increased the  </p>
+    </div>
+    <header>
+        <div class="form-container" align = 'center'>
+          <form method=POST class = 'form'> {%csrf_token%}
+            {% comment %} <div class = 'med med_name'>Medicine Name: {{medicineform.medicine_name}}</div>
+            <div class="med number_meds">Number of tablets: {{medicineform.number_of_tablets}}</div>
+            <div class="med exp_date">Expiry Date: {{medicineform.expiry_date}}</div> {% endcomment %}
+            {% comment %} <input type="submit" class="submit-button"> {% endcomment %}
+          </form>
+        </div>
+    </header>
+  </body>
+</html>

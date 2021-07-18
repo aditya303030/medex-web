@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is the Registration page">
+        <link rel="stylesheet" href="../static/users.css">
+    </head>
+    <body>
+       
+        <!-- <a href="/">Back to home</a> -->
+        <div class="form-container-register">
+            <div class="main"><h3>REGISTER</h3></div>
+            <form method="POST" action = "/register/" align='center'>
+                {% csrf_token %}
+                <div><input type="text" name="first_name" placeholder="First Name" class="input first_name"></div><br>
+                <div><input type="text" name="last_name" placeholder="Last Name"class="input last_name"></div><br>
+                <div><input type="text" name="username" placeholder="Username"class="input username"></div><br>
+                <div><input type="password" name="password" placeholder="Password"class="input password"></div><br>
+                <div><input type="password" name="repassword" placeholder="Confirm Password"class="input repassword"></div><br>
+                <div><input type="email" name = 'email' placeholder="Email"class="input email"></div><br>
+                <a href="/login/" class="link login-from-register" align='right'>Already have an account? Click here to login.</a>
+                <div><input type="submit" class="button submit-button1" value="SUBMIT"></div>
+            </form>
+        </div>
+        <div>
+            {% for message in messages %}
+                <h3>{{message}}</h3>
+            {%endfor%}
+        </div>
+    </body>
+</html>
