@@ -48,6 +48,9 @@ body {
 .nav-area li a.link.register-link {
     background-color: rgba(52, 52, 197, 0.993);
     color: white;
+    border-radius: 5px;
+    height: 30px;
+       
 }
 
 /* .link::after {
@@ -62,7 +65,7 @@ body {
 .link:hover::after {
     width: 100%;
     transition: width .3s;
-} */
+}  */
 
 
 
@@ -106,10 +109,6 @@ body {
 }
 
 .main-body {
-    /* box-shadow:
-    0 4.9px 8.4px rgba(0, 0, 0, 0.064),
-    0 35px 67px rgba(0, 0, 0, 0.16);
-    background-color: white; */
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 15px;
@@ -119,13 +118,10 @@ body {
     font-family: Optima, sans-serif;
     font-size: 55px;
     margin-top: 100px;
-    /* margin-left: 150px;
-    margin-bottom: 10px; */
     text-align: left;
 }
 .main-body h4 {
     font-size: larger;
-    /* margin-left: 150px; */
     margin-top: 0px;
     font-family:Verdana;
     color: rgb(23, 149, 221);
@@ -133,7 +129,6 @@ body {
 }
 
 .para {
-    /* margin-left: 100px; */
     margin-right: 250px;
     font-size: 20px;
     font-family:serif;
