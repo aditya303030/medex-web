@@ -49,8 +49,7 @@ body {
     background-color: rgba(52, 52, 197, 0.993);
     color: white;
     border-radius: 5px;
-    height: 30px;
-       
+    height: 30px; 
 }
 
 /* .link::after {
