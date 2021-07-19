@@ -36,15 +36,21 @@ body {
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 5px;
-    font-family: poppins;
+    font-family: Arial;
     font-size: 15px;
+    color: rgba(52, 52, 197, 0.993);
     margin: 10px;
     padding: 0 20px;
     display: inline-block;
     background-color:whitesmoke ;
 }
 
-.link::after {
+.nav-area li a.link.register-link {
+    background-color: rgba(52, 52, 197, 0.993);
+    color: white;
+}
+
+/* .link::after {
     content: "";
     display: block;
     width: 0;
@@ -56,7 +62,9 @@ body {
 .link:hover::after {
     width: 100%;
     transition: width .3s;
-}
+} */
+
+
 
 .welcome-text {
     position: absolute;
@@ -113,16 +121,15 @@ body {
     margin-top: 100px;
     /* margin-left: 150px;
     margin-bottom: 10px; */
-    
     text-align: left;
 }
 .main-body h4 {
     font-size: larger;
     /* margin-left: 150px; */
     margin-top: 0px;
-    font-family: Lorem ipsum dolor sit amet;
+    font-family:Verdana;
     color: rgb(23, 149, 221);
-    font-size: 25px;    
+    font-size: 20px;    
 }
 
 .para {
