@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .header {
@@ -17,7 +17,7 @@ body {
 
 
 .link {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     
 }
 
@@ -41,29 +41,18 @@ body {
     margin: 10px;
     padding: 0 20px;
     display: inline-block;
-    background-color:whitesmoke ;
+    background-color:white ;
 }
 
 .nav-area li a.link.register-link {
     background-color: rgba(52, 52, 197, 0.993);
     color: white;
     border-radius: 5px;
-    height: 30px; 
+    padding-top: 12px;
+    text-align: center;
+    height: 2rem;
 }
 
-/* .link::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background:rgb(0, 0, 0);
-    transition: width .3s;
-}
-
-.link:hover::after {
-    width: 100%;
-    transition: width .3s;
-}  */
 
 
 
@@ -109,7 +98,16 @@ body {
 .main-body {
     margin-left: 50px;
     margin-right: 50px;
-    border-radius: 15px;
+    border-radius: 12px;
+    background-color: white;
+    height: 160px;
+    box-shadow:
+    0 5.3px 3px rgba(0, 0, 0, 0.034),
+    0 10px 7.2px rgba(0, 0, 0, 0.048),
+    0 14.6px 13.6px rgba(0, 0, 0, 0.06),
+    0 20.9px 24.3px rgba(0, 0, 0, 0.072),
+    0 34.2px 45.5px rgba(0, 0, 0, 0.086),
+    0 100px 109px rgba(0, 0, 0, 0.12);
 }
 
 .main-body h1 {
@@ -117,13 +115,46 @@ body {
     font-size: 55px;
     margin-top: 100px;
     text-align: left;
+    margin-left: 40px;
 }
+
 .main-body h4 {
     font-size: larger;
     margin-top: 0px;
     font-family:Verdana;
     color: rgb(23, 149, 221);
-    font-size: 20px;    
+    font-size: 16px;    
+    margin-left: 40px;
+}
+
+.main-content {
+    margin-left: 50px;
+    margin-right: 90px;
+    border-radius: 12px;
+    background-color: white;
+    height: 380px;
+    box-shadow:
+    0 5.3px 3px rgba(0, 0, 0, 0.034),
+    0 10px 7.2px rgba(0, 0, 0, 0.048),
+    0 14.6px 13.6px rgba(0, 0, 0, 0.06),
+    0 20.9px 24.3px rgba(0, 0, 0, 0.072),
+    0 34.2px 45.5px rgba(0, 0, 0, 0.086),
+    0 100px 109px rgba(0, 0, 0, 0.12);
+}
+
+.main-content p {
+    height: 280px;
+    width: 300px;
+    box-shadow:
+    0 0.8px 38.4px rgba(0, 0, 0, 0.08),
+    0 6px 73px rgba(0, 0, 0, 0.16);
+    margin: 30px;
+    padding:5px;
+    border-radius: 10px;
+}
+
+.main-content li {
+    display: inline-block;
 }
 
 .para {
