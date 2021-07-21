@@ -130,6 +130,7 @@ body {
 .main-content {
     margin-left: 50px;
     margin-right: 90px;
+    
     border-radius: 12px;
     background-color: white;
     height: 380px;
@@ -142,34 +143,15 @@ body {
     0 100px 109px rgba(0, 0, 0, 0.12);
 }
 
-/* .main-content p {
-    height: 280px;
-    width: 300px;
+.main-content div.section {
     box-shadow:
-    0 0.8px 38.4px rgba(0, 0, 0, 0.08),
-    0 6px 73px rgba(0, 0, 0, 0.16);
-    margin: 30px;
-    margin-left: 55px;
-    padding:5px;
-    border-radius: 10px;
-} */
-
-.main-content li {
-    display: inline-block;
-    height: 33%;
-    width: 33%;
-    border-radius: 10px;
-    box-shadow:
-    0 0.8px 38.4px rgba(0, 0, 0, 0.08),
-    0 6px 73px rgba(0, 0, 0, 0.16);
-}
-
-.para {
-    margin-right: 250px;
-    font-size: 20px;
-    font-family:serif;
-}
-.main-content li strong {
-    font-size: 50px;
-    text-align: center;
+    0 4.7px 2.2px rgba(0, 0, 0, 0.02),
+    0 11.4px 5.3px rgba(0, 0, 0, 0.028),
+    0 21.4px 10px rgba(0, 0, 0, 0.035),
+    0 38.2px 17.9px rgba(0, 0, 0, 0.042),
+    0 71.4px 33.4px rgba(0, 0, 0, 0.05),
+    0 171px 80px rgba(0, 0, 0, 0.07);
+    margin-top: 30px;
+    border: 1px solid black;
+    height:200px;
 }
