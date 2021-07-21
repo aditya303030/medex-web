@@ -142,23 +142,34 @@ body {
     0 100px 109px rgba(0, 0, 0, 0.12);
 }
 
-.main-content p {
+/* .main-content p {
     height: 280px;
     width: 300px;
     box-shadow:
     0 0.8px 38.4px rgba(0, 0, 0, 0.08),
     0 6px 73px rgba(0, 0, 0, 0.16);
     margin: 30px;
+    margin-left: 55px;
     padding:5px;
     border-radius: 10px;
-}
+} */
 
 .main-content li {
     display: inline-block;
+    height: 33%;
+    width: 33%;
+    border-radius: 10px;
+    box-shadow:
+    0 0.8px 38.4px rgba(0, 0, 0, 0.08),
+    0 6px 73px rgba(0, 0, 0, 0.16);
 }
 
 .para {
     margin-right: 250px;
     font-size: 20px;
     font-family:serif;
+}
+.main-content li strong {
+    font-size: 50px;
+    text-align: center;
 }
