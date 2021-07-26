@@ -15,56 +15,38 @@ body {
     font-family:Lorem ipsum dolor sit amet;
 }
 
-
-.link {
-    background-color: white;
-    
+.wrapper {
+    float: right;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .nav-area {
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-}
-
-.nav-area li{
-    display: inline-block;
-    font-size: 20px;
-}
-
-.nav-area li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 5px;
+    padding:15px;
     font-family: Arial;
     font-size: 15px;
     margin: 10px;
-    padding: 0 20px;
-    display: inline-block;
+    display: flex;
     background-color:white ;
+    float: right;
+    list-style: none;
 }
 
-.nav-area li a.link.register-link {
+.wrapper div.nav-area a.link {
+    text-decoration: none;
+}
+
+.wrapper div.nav-area a.link.register-link {
     background-color: rgba(52, 52, 197, 0.993);
     color: white;
     border-radius: 5px;
-    padding-top: 12px;
+    padding: 10px;
     text-align: center;
     height: 2rem;
 }
 
-.welcome-text {
-    position: absolute;
-    width: 600px;
-    height: 300px;
-    margin:20% 30%;
-}
-
-.welcome-text h1{
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-}
 
 .form {
     margin-top: 300px;
@@ -75,12 +57,6 @@ body {
 .med {
     text-decoration: underline;
     font-size: 30px;
-}
-
-.wrapper {
-    width: 1300px;
-    margin: auto;
-    position: absolute;
 }
 
 .submit-button {
@@ -125,12 +101,12 @@ body {
 }
 
 .main-content {
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 100px;
+    margin-right:110px;
     margin-top: 30px;
     border-radius: 12px;
+    align-items: center;
     background-color:rgb(169, 166, 179);
-    height: 380px;
     padding: 30px;
     box-shadow:
     0 5.3px 3px rgba(0, 0, 0, 0.034),
@@ -141,31 +117,26 @@ body {
     0 100px 109px rgba(0, 0, 0, 0.12);
 }
 
-.main-content div.section {
-    box-shadow:
-    0 4.7px 2.2px rgba(0, 0, 0, 0.02),
-    0 11.4px 5.3px rgba(0, 0, 0, 0.028),
-    0 21.4px 10px rgba(0, 0, 0, 0.035),
-    0 38.2px 17.9px rgba(0, 0, 0, 0.042),
-    0 71.4px 33.4px rgba(0, 0, 0, 0.05),
-    0 171px 80px rgba(0, 0, 0, 0.07);
-    margin-top: 30px;
-    background-color: white ;
-    height:280px;
-    width: 300px;
-    float: left;
-    border-radius: 5px;
-    margin: 20px;
+.main-content div.container div.section {
+    background-color: white;
+    border: 1px solid black;
+    width: 100%;
 }
 
-.main-content div.section::before {
+.main-content div.container {
+    display: flex;
+}
+ 
+
+
+/* .main-content div.section::before {
     content: " ";
     position: absolute;
     width: 7px;
     height: 280px;
     border-radius: 4px;
     background-color: #691a47;
-}
+} */
 
 .main-content h3 {
     text-align: center;
