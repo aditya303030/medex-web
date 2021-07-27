@@ -29,7 +29,7 @@ body {
     font-size: 15px;
     margin: 10px;
     display: flex;
-    background-color:white ;
+    background-color:#eaeaea;
     float: right;
     list-style: none;
 }
@@ -73,13 +73,6 @@ body {
     margin-right: 50px;
     background-color: white;
     height: 160px;
-    /* box-shadow:
-    0 5.3px 3px rgba(0, 0, 0, 0.034),
-    0 10px 7.2px rgba(0, 0, 0, 0.048),
-    0 14.6px 13.6px rgba(0, 0, 0, 0.06),
-    0 20.9px 24.3px rgba(0, 0, 0, 0.072),
-    0 34.2px 45.5px rgba(0, 0, 0, 0.086),
-    0 100px 109px rgba(0, 0, 0, 0.12); */
     border-bottom: 1px solid black;
 }
 
@@ -104,13 +97,6 @@ body {
     align-items: center;
     background-color:#fff;
     padding: 30px;
-    /* box-shadow:
-    0 5.3px 3px rgba(0, 0, 0, 0.034),
-    0 10px 7.2px rgba(0, 0, 0, 0.048),
-    0 14.6px 13.6px rgba(0, 0, 0, 0.06),
-    0 20.9px 24.3px rgba(0, 0, 0, 0.072),
-    0 34.2px 45.5px rgba(0, 0, 0, 0.086),
-    0 100px 109px rgba(0, 0, 0, 0.12); */
 }
 
 .main-content div.container div.section {
@@ -126,17 +112,6 @@ body {
 .main-content div.container {
     display: flex;
 }
- 
-
-
-/* .main-content div.section::before {
-    content: " ";
-    position: absolute;
-    width: 7px;
-    height: 280px;
-    border-radius: 4px;
-    background-color: #691a47;
-} */
 
 .main-content h3 {
     text-align: center;
