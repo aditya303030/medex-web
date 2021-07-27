@@ -14,10 +14,10 @@
         <div><a class="link about-link" href="about"><strong>About</strong></a></div>
         <div><a class="link why-link" href="why/"><strong>Why</strong></a></div>
         {% if request.user.is_authenticated%}
-          <li><strong>Hello, {{user.first_name}}</strong></li>
-          <li><a href="logout" class="link logout-link"><strong>Logout</strong></a></li>
+          <strong>Hello, {{user.first_name}}</strong></li>
+          <a href="logout" class="link logout-link"><strong>Logout</strong></a>
         {%else %}
-          <li><a class="link login-link" href="login"><strong>Log in</strong></a></li>
+          <li><a class="link login-link" href="login"><strong>Log in</strong></a>
         {%endif%} 
       </div>
     </div>
@@ -32,7 +32,10 @@
         <h3 align = "center">WHY DONATE? HOW DO I DONATE?</h3>
       </div>
       <div class="container">
-        <div class="section section-why">the Mavericks defeated the Spurs, 103–92. But the Mavs started the season with a 6–40 record on their way to finishing 15–67. However, the Mavericks did make a player acquisition that, while it seemed minor at the time, turned out to play a significant role in the early years of their franchise. Journeyman 6 ft 3 in guard</div>
+        <div class="section section-why">
+          <img src="https://www.dabangasudan.org/uploads/cache/article_detail_image_half_width/uploads/media/5bde069f43a9c.jpeg">
+          
+        </div>
         <div class="section section-how"></div>
         <div class="section section-about"></div>
       </div>
