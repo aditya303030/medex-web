@@ -13,6 +13,7 @@ body {
 .header h1 {
     margin-left: 100px;
     font-family:Lorem ipsum dolor sit amet;
+    
 }
 
 .wrapper {
@@ -37,7 +38,7 @@ body {
 .wrapper div.nav-area a.link {
     text-decoration: none;
     margin: 15px;
-    color: black;
+    color: rgba(52, 52, 197, 0.993);
     font-size: 15px;
 }
 
@@ -72,22 +73,24 @@ body {
 }
 
 .main-body {
-    margin-left: 50px;
-    margin-right: 50px;
-    background-color: white;
-    height: 160px;
-    border-bottom: 1px solid black;
+    background-image: url('https://research.msu.edu/wp-content/uploads/2019/02/2017-01-17-spilled-pills.jpg');
+    height: 100%;
+    background-repeat:no-repeat;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-body h1 {
     font-family: Optima, sans-serif;
     font-size: 55px;
     margin-top: 100px;
-    text-align: left;
     margin-left: 40px;
 }
 
-.main-body h4 {
+.main-body h2 {
     font-size: larger;
     margin-top: 0px;
     font-family:Verdana;
@@ -99,24 +102,29 @@ body {
 .main-content {
     align-items: center;
     background-color:#fff;
-    padding: 30px;
-    margin: 30px;
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 1px solid black;
 }
 
 .main-content div.container div.section {
-    background-color: white;
+    background-color: whitesmoke;
     box-shadow:
     0 12.5px 15.4px rgba(0, 0, 0, 0.035),
     0 100px 123px rgba(0, 0, 0, 0.07);
     border: 1px solid black;
     width: 100%;
-    margin: 1.2rem;
+    margin: 1.5rem;
     -webkit-box-shadow: -2px 7px 21px -9px rgb(0 0 0 / 75%);
     box-shadow: -2px 7px 21px -9px rgb(0 0 0 / 75%);
 }
 
 .main-content div.container {
     display: flex;
+}
+
+.main-content div.container div.section img {
+    width: 100%;
 }
 
 .main-content h3 {
