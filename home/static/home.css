@@ -1,5 +1,5 @@
 body {
-    background-color:#eaeaea;
+    background-color:black;
     margin: 0;
     padding:0;
 }
@@ -97,7 +97,7 @@ body {
     margin-left: 40px;
 }
 
-.main-body div.container.body img {
+.main-body div.container.body div.body-content img {
     width: 100%;
 }
 
