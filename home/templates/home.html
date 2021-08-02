@@ -8,19 +8,19 @@
   <body>
     <div class="header">
       <h1>Medex</h1>
-    </div>
-    <div class = wrapper>
       <div class="nav-area">
-        <div><a class="link register-link" href="register" align='center'><strong>Create account</strong></a></div>
-        <div><a class="link about-link" href="about"><strong>About</strong></a></div>
-        <div><a class="link why-link" href="why/"><strong>Why</strong></a></div>
-        {% if request.user.is_authenticated%}
-          <strong>Hello, {{user.first_name}}</strong></li>
-          <a href="logout" class="link logout-link"><strong>Logout</strong></a>
-        {%else %}
-          <li><a class="link login-link" href="login"><strong>Log in</strong></a>
-        {%endif%} 
-      </div>
+        <ul>
+          <li><a class="link register-link" href="register" align='center'><strong>Create account</strong></a></li>
+          <li><a class="link about-link" href="about"><strong>About</strong></a></li>
+          <li><a class="link why-link" href="why/"><strong>Why</strong></a></li>
+          {% if request.user.is_authenticated%}
+            <strong>Hello, {{user.first_name}}</strong></li>
+            <li><a href="logout" class="link logout-link"><strong>Logout</strong></a></li>
+          {%else %}
+            <li><a class="link login-link" href="login"><strong>Log in</strong></a></li>
+          {%endif%}
+        </ul>
+      </div> 
     </div>
     <div class="main-body">
       <div class="container body">
@@ -28,7 +28,6 @@
           <h1 >Medex</h1>
           <h2>Take a step forward and help the ones in need.</h2>
           <!-- <img src="https://research.msu.edu/wp-content/uploads/2019/02/2017-01-17-spilled-pills.jpg"> -->
-          <div class="background-image"></div>
         </div>
       </div>
       {% comment %} <p class="para para-1">Medex is a platform created to donate unused and unexpired medicine to the unprivileged people of India. Hospitals are beyond the reach of several people in India due to financial reasons and the least they should be having is a regular supply of commonly used medicines for basic treatements at home. An estimated 469 million people in India do not have regular access to essential medicines, according to the WHO. </p>
