@@ -7,19 +7,21 @@
   </head>
   <body>
     <div class="header">
-      <h1>Medex</h1>
       <div class="nav-area">
-        <ul>
-          <li><a class="link register-link" href="register" align='center'><strong>Create account</strong></a></li>
-          <li><a class="link about-link" href="about"><strong>About</strong></a></li>
-          <li><a class="link why-link" href="why/"><strong>Why</strong></a></li>
+        <div class="main-head">
+          <a href="/">Medex</a>
+        </div>
+        <div class="main-nav-link-bar">
+          <a class="link register-link" href="register" align='center'><strong>Create account</strong></a>
+          <a class="link about-link" href="about"><strong>About</strong></a>
+          <a class="link why-link" href="why/"><strong>Why</strong></a>
           {% if request.user.is_authenticated%}
             <strong>Hello, {{user.first_name}}</strong></li>
-            <li><a href="logout" class="link logout-link"><strong>Logout</strong></a></li>
+            <a href="logout" class="link logout-link"><strong>Logout</strong></a>
           {%else %}
-            <li><a class="link login-link" href="login"><strong>Log in</strong></a></li>
+            <a class="link login-link" href="login"><strong>Log in</strong></a>
           {%endif%}
-        </ul>
+        </div>
       </div> 
     </div>
     <div class="main-body">

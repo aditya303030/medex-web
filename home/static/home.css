@@ -8,36 +8,30 @@ body {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
     margin-left: 0px;
-    border-radius: 7px;
-}
-.header h1 {
-    font-family:Lorem ipsum dolor sit amet;
-    margin: 1rem;
 }
 
-.header ul {
-    list-style: none;
-    text-align: right;
-} 
-
-.header ul li {
-    display: inline-block;
-}
-
-.header ul li a {
-    margin: 1rem;
+.header div.nav-area div.main-head a {
     text-decoration: none;
+    font-size: 2rem;
 }
 
 .header div.nav-area {
-    justify-content: center;
+    display: flex;
 }
-/* 
-.form {
-    margin-top: 300px;
-    text-align: left;
-    margin-left: 15px;
-} */
+
+.header div.nav-area div.main-nav-link-bar a{
+    text-decoration: none;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    float: right;
+
+}
+
+.header div.nav-area div.main-head {
+    width: 75%;
+}
 
 .med {
     text-decoration: underline;
@@ -62,38 +56,22 @@ body {
 
 .main-body h1 {
     font-family: Optima, sans-serif;
-    font-size: 55px;
-    margin-top: 100px;
-    margin-left: 40px;
+    font-size: 10rem;
+    margin-left: 8rem;
+    position: absolute;
+    margin-top: 15rem;
+    font-size:3.5rem;
 }
 
 .main-body h2 {
-    font-size: larger;
-    margin-top: 0px;
     font-family:Verdana;
     color: rgb(23, 149, 221);
     font-size: 16px;    
     margin-left: 40px;
-}
-
-/* .main-body div.container.body div.body-content img {
-    width: 100%;
-    height: 85%;
-} */
-
-
-.main-body div.container.body div.body-content h2 {
     position: absolute;
-    margin-left: 10rem;
+    margin-left: 8rem;
     margin-top: 20rem;
-    font-size: 2rem;
-}
-
-.main-body div.container.body div.body-content h1 {
-    position: absolute;
-    margin-left: 10rem;
-    margin-top: 15rem;
-    font-size:5rem;
+    font-size: 1rem
 }
 
 .main-content {
