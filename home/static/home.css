@@ -23,6 +23,17 @@ body {
     display: flex;
 }
 
+.header div.nav-area div.main-nav-link-bar p {
+    display: flex;
+    float: right;
+    align-items: center;
+    height: 100%;
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-family:  Noto Sans TC,sans-serif;
+    text-decoration-style: none;
+}
+
 .header div.nav-area div.main-nav-link-bar a{
     text-decoration: none;
     padding-left: .75rem;
@@ -34,13 +45,12 @@ body {
     font-family:  Noto Sans TC,sans-serif;
 }
 
-.header div.nav-area div.main-head {
-    width: 75%;
+.header div.nav-area div.main-nav-link-bar {
+    width: 100%;
 }
 
-.med {
-    text-decoration: underline;
-    font-size: 30px;
+.header div.nav-area div.main-head {
+    width: 60%;
 }
 
 .submit-button {
@@ -101,10 +111,6 @@ body {
 
 .main-content div.container {
     display: flex;
-}
-
-.main-content div.container div.section img {
-    width: 100%;
 }
 
 .main-content h3 {
