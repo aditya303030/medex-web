@@ -12,14 +12,14 @@
           <a href="/">Medex</a>
         </div>
         <div class="main-nav-link-bar">
-          <a class="link register-link" href="register" align='center'><strong>Create account</strong></a>
-          <a class="link about-link" href="about"><strong>About</strong></a>
-          <a class="link why-link" href="why/"><strong>Why</strong></a>
+          <a class="link register-link" href="register" align='center'><strong>Create account</a>
+          <a class="link about-link" href="about">About</a>
+          <a class="link why-link" href="why/">Why</a>
           {% if request.user.is_authenticated%}
-            <strong>Hello, {{user.first_name}}</strong></li>
-            <a href="logout" class="link logout-link"><strong>Logout</strong></a>
+            Hello, {{user.first_name}}
+            <a href="logout" class="link logout-link">Logout</a>
           {%else %}
-            <a class="link login-link" href="login"><strong>Log in</strong></a>
+            <a class="link login-link" href="login">Log in</a>
           {%endif%}
         </div>
       </div> 
@@ -35,23 +35,6 @@
       {% comment %} <p class="para para-1">Medex is a platform created to donate unused and unexpired medicine to the unprivileged people of India. Hospitals are beyond the reach of several people in India due to financial reasons and the least they should be having is a regular supply of commonly used medicines for basic treatements at home. An estimated 469 million people in India do not have regular access to essential medicines, according to the WHO. </p>
       <p class="para para-2">Since the poor can't afford expensive medicines, a donation from the priviledged people who can actually afford it would be of great help.</p> {% endcomment %}
     </div>
-    <div class="main-content">
-      <div class="post-section">
-        <div class="heading">
-          <h3 align = "center">WHY DONATE? HOW DO I DONATE?</h3>
-        </div>
-        <div class="container">
-          <div class="section section-why">
-            <img src="https://www.dabangasudan.org/uploads/cache/article_detail_image_half_width/uploads/media/5bde069f43a9c.jpeg">
-            <p>About 2.4 million Indians die of treatable conditions every year. This is not only due to the financial reasons, but also because of the poor quality of care.</p>
-          </div>
-          <div class="section section-how">
-            <p>Over 4000 people die of treatable conditions.  </p>
-          </div>
-          <div class="section section-about"></div>
-        </div>
-    </div>
-
     <header>
         <div class="form-container" align = 'center'>
           <form method=POST class = 'form'> {%csrf_token%}

@@ -1,5 +1,5 @@
 body {
-    background-color:whitesmoke;
+    background-color:white;
     margin: 0;
 }
 
@@ -8,11 +8,15 @@ body {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
     margin-left: 0px;
+    height: 2.7rem;
 }
 
 .header div.nav-area div.main-head a {
     text-decoration: none;
     font-size: 2rem;
+    color: black;
+    font-family:  Noto Sans TC,sans-serif;
+    margin-left: 3rem;
 }
 
 .header div.nav-area {
@@ -26,7 +30,8 @@ body {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     float: right;
-
+    color: black;
+    font-family:  Noto Sans TC,sans-serif;
 }
 
 .header div.nav-area div.main-head {
@@ -120,4 +125,8 @@ body {
 }
 .main-content div.container div.section.section-how {
     height: 24rem;
+}
+
+.form-container-login div.login-container {
+    width: 90rem;
 }
