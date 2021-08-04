@@ -17,15 +17,17 @@
                 <a class="link about-link" href="/about">About</a>
                 <a class="link why-link" href="/why/">Why</a>
                 {% if request.user.is_authenticated%}
-                  Hello, {{user.first_name}}
+                  <p>Hello, {{user.first_name}}</p>
                   <a href="/logout" class="link logout-link">Logout</a>
                 {%else %}    
-                <a class="link login-link" href="/login">Log in</a>
+                  <a class="link login-link" href="/login">Log in</a>
                 {%endif%}
               </div>
             </div> 
           </div>
         {%block register-content%}
+        {%endblock%}
+        {%block why-content%}
         {%endblock%}
     </body>
 </html>
