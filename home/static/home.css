@@ -15,7 +15,8 @@ body {
     text-decoration: none;
     font-size: 2rem;
     color: black;
-    font-family:  Noto Sans TC,sans-serif;
+    /* font-family:  Noto Sans TC,sans-serif; */
+    font-family: Quicksand, sans-serif;
     margin-left: 3rem;
 }
 

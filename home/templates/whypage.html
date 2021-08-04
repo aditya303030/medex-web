@@ -7,25 +7,23 @@
     <body>
         <div class="header">
             <div class="nav-area">
-              <div class="main-head">
+                <div class="main-head">
                 <a href="/">Medex</a>
-              </div>
-              <div class="main-nav-link-bar">
-                <div>
-                  {% if request.user.is_authenticated%}
-                    <p>Hello, {{user.first_name}}</p>
-                    <a class="link about-link" href="/about">About</a>
-                    <a href="/logout" class="link logout-link">Logout</a>
-                  {%else %}
-                    <a class="link register-link" href="/register" align='center'>Create account</a>
-                    <a class="link about-link" href="/about">About</a>
-                    <a class="link login-link" href="/login">Log in</a>
-                  {%endif%}
                 </div>
-                
-                
-              </div>
+                <div class="main-nav-link-bar">
+                    <div>
+                        {% if request.user.is_authenticated%}
+                        <p>Hello, {{user.first_name}}</p>
+                        <a class="link about-link" href="/about">About</a>
+                        <a href="/logout" class="link logout-link">Logout</a>
+                        {%else %}
+                        <a class="link register-link" href="/register" align='center'>Create account</a>
+                        <a class="link about-link" href="/about">About</a>
+                        <a class="link login-link" href="/login">Log in</a>
+                        {%endif%}
+                    </div>                
+                </div>
             </div> 
-          </div>
+        </div>
     </body>
 </html>

@@ -2,9 +2,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="This is the About page">
+        <link rel="stylesheet" href="../static/home.css">
     </head>
     <body>
-        <h3>About</h3>
-        <a href="/">Back to home</a>
+        <div class="header">
+            <div class="nav-area">
+                <div class="main-head">
+                <a href="/">Medex</a>
+                </div>
+                <div class="main-nav-link-bar">
+                    <div>
+                        {% if request.user.is_authenticated%}
+                        <p>Hello, {{user.first_name}}</p>
+                        <a class="link why-link" href="why/">Why</a>
+                        <a href="/logout" class="link logout-link">Logout</a>
+                        {%else %}
+                        <a class="link register-link" href="/register" align='center'>Create account</a>
+                        <a class="link why-link" href="why/">Why</a>
+                        <a class="link login-link" href="/login">Log in</a>
+                        {%endif%}
+                    </div>                
+                </div>
+            </div> 
+        </div>
     </body>
 </html>
