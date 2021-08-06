@@ -15,7 +15,7 @@
                         {% if request.user.is_authenticated%}
                         <p>Hello, {{user.first_name}}</p>
                         <a class="link why-link" href="why/">Why</a>
-                        <a href="/logout" class="link logout-link">Logout</a>
+        y                <a href="/logout" class="link logout-link">Logout</a>
                         {%else %}
                         <a class="link register-link" href="/register" align='center'>Sign Up</a>
                         <a class="link why-link" href="why/">Why</a>
@@ -33,7 +33,16 @@
                 <div class="about-content">
                     <div class="heading about-heading-1">What is our motive?</div>
                     <div class="content about-content-1">
-                        Medex is a project made help the poor by donating unused and unexpired medicines. 
+                        Medex is a project made help the poor by donating unused and unexpired medicines. Many poor people living in rural areas have less or no access
+                        to medicines and we can resolve this issue by donating unused and unexpired medicine.
+                    </div>
+                    <div class="heading about-heading-2">
+                        Who made this website?
+                    </div>
+                    <div class="content about-content-2">
+                        My name is Aditya and I am in grade 12. I am currently studying at Delhi Public 
+                        School - Bangalore East. This is a project I started so that we can help the poor
+                        have regular access to commonly used medicines.
                     </div>
                 </div>
             </div>

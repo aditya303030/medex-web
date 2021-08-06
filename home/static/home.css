@@ -41,8 +41,16 @@ body {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     float: right;
+    margin: 3px;
     color: black;
     font-family:  Noto Sans TC,sans-serif;
+}
+
+.header div.nav-area div.main-nav-link-bar a.link.register-link {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top:10px ;
+    padding-bottom:10px ;
 }
 
 .header div.nav-area div.main-nav-link-bar {
@@ -164,9 +172,9 @@ body {
 }
 
 .about-container {
-    margin: 10px auto 0px;
+    margin: 20px auto 0px;
     width: 90%;
-    max-width: 700px;
+    max-width: 45rem;
 }
 
 .about-container div.about-main div.about-heading {
@@ -186,4 +194,5 @@ body {
     font-family: Quicksand, sans-serif;
     color: black;
     font-weight: 200;
+    line-height: 1.3rem;
 }
