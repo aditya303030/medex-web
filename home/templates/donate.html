@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Donate">
+        <link rel="stylesheet" href="../static/home.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="nav-area">
+                <div class="main-head">
+                <a href="/">Medex</a>
+                </div>
+                <div class="main-nav-link-bar">
+                    <div>
+                        {% if request.user.is_authenticated%}
+                        <a href="/logout" class="link logout-link">Logout</a>
+                        <a class="link about-link" href="about">About</a>
+                        <a class="link why-link" href="/why">Why</a>
+                        <p>Hello, {{user.first_name}}</p>
+                        {%else %}
+                        <a class="link register-link" href="/register" align='center'>Sign Up</a>
+                        <a class="link why-link" href="/why">Why</a>
+                        <a class="link login-link" href="/login">Log in</a>
+                        {%endif%}
+                    </div>                
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>

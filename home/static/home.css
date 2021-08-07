@@ -8,7 +8,7 @@ body {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
     margin-left: 0px;
-    height: 2.7rem;
+    height: 2.9rem;
 }
 
 .header div.nav-area div.main-head a {
@@ -53,6 +53,13 @@ body {
     padding-bottom:10px ;
 }
 
+.header div.nav-area div.main-nav-link-bar a.link.donate-link {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top:10px ;
+    padding-bottom:10px;
+    margin-left: 1rem;
+} 
 .header div.nav-area div.main-nav-link-bar {
     width: 100%;
     margin-right: 1rem;
@@ -174,7 +181,7 @@ body {
 .about-container {
     margin: 20px auto 0px;
     width: 90%;
-    max-width: 45rem;
+    max-width: 42rem;
 }
 
 .about-container div.about-main div.about-heading {

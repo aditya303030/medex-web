@@ -1,6 +1,15 @@
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from .forms import Medicinehompage
+from django.core.checks import messages
+from django.http.response import HttpResponse
+from django.shortcuts import redirect, render, resolve_url
+from django.http import HttpResponse
+from django.contrib.auth.views import LoginView
+from django.urls import reverse_lazy
+from django.contrib.auth.models import User,auth
+from django.contrib.auth import authenticate 
+from django.contrib import messages
 # Create your views here.
 
 def homepage(request):
@@ -22,3 +31,5 @@ def about(request):
 def whypage(request):
   return render(request,'whypage.html',{})
   
+def donate(request):
+  return render(request,'donate.html',{})

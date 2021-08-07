@@ -14,11 +14,11 @@
                     <div>
                         {% if request.user.is_authenticated%}
                         <p>Hello, {{user.first_name}}</p>
-                        <a class="link why-link" href="why/">Why</a>
-        y                <a href="/logout" class="link logout-link">Logout</a>
+                        <a class="link why-link" href="/why">Why</a>
+                        <a href="/logout" class="link logout-link">Logout</a>
                         {%else %}
                         <a class="link register-link" href="/register" align='center'>Sign Up</a>
-                        <a class="link why-link" href="why/">Why</a>
+                        <a class="link why-link" href="/why">Why</a>
                         <a class="link login-link" href="/login">Log in</a>
                         {%endif%}
                     </div>                
