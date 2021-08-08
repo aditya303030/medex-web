@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Donate">
         <link rel="stylesheet" href="../static/home.css">
+        <link rel="stylesheet" href="../static/users.css">
     </head>
     <body>
         <div class="header">
@@ -25,6 +26,19 @@
                     </div>                
                 </div>
             </div> 
+        </div>
+        <div class="main-container-form">
+            <div class="main-donation-form">
+                <div class="main-donation-head" align="center">
+                    ENTER SOME DETAILS AND START DONATING
+                </div>
+                <form method="POST" class="donation-form">{%csrf_token%}
+                    <p>NAME</p>
+                    <div><input type="text" name="donation-form-name" placeholder="Enter your name" class="input1 donation-form-name"></div><br>
+                    <p>EMAIL</p>
+                    <div><input type="text" name="donation-form-email" placeholder="Enter your email" class="input1 donation-form-email"></div>
+                </form>
+            </div>
         </div>
     </body>
 </html>
