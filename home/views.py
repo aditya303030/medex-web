@@ -32,4 +32,5 @@ def whypage(request):
   return render(request,'whypage.html',{})
   
 def donate(request):
+  # if request.method=="POST":
   return render(request,'donate.html',{})

@@ -2,8 +2,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Donate">
-        <link rel="stylesheet" href="../static/home.css">
         <link rel="stylesheet" href="../static/users.css">
+        <link rel="stylesheet" href="../static/home.css">
     </head>
     <body>
         <div class="header">
@@ -36,7 +36,22 @@
                     <p>NAME</p>
                     <div><input type="text" name="donation-form-name" placeholder="Enter your name" class="input1 donation-form-name"></div><br>
                     <p>EMAIL</p>
-                    <div><input type="text" name="donation-form-email" placeholder="Enter your email" class="input1 donation-form-email"></div>
+                    <div><input type="text" name="donation-form-email" placeholder="Enter your email" class="input1 donation-form-email"></div><br>
+                    <p>MEDICINE</p>
+                    <div class="search-wrapper">
+                        <div class="search-input">
+                            <input type="text" name="donation-form-sear-input" placeholder="Type to search medicine" class="input1 donation-form-search-input">
+                            <!-- <div class="auto-complete-box">
+
+                            </div> -->
+                        </div>
+                    </div>
+                    <p>Quantity</p>
+                    <div><input type="number" name="donation-form-quantity" placeholder="Enter quantity" class="input1 donation-form-quantity"></div><br>
+                    <p>Attach a picture</p>
+                    <div><input type="file" name="donation-form-attach-picture" placeholder="Attach a picture" class="input1 donation-form-attach-picture"></div><br>
+                    <p>Expiry date</p>
+                    <div><input type="date" name="donation-form-expiry-date" placeholder="Expiry date" class="input1 donation-form-expiry-date"></div><br>
                 </form>
             </div>
         </div>

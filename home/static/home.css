@@ -208,7 +208,7 @@ body {
     margin: 20px auto 0px;
     width: 90%;
     max-width: 50rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%; 
 }
 
@@ -216,18 +216,20 @@ body {
     content: " ";
     position: absolute;
     width: 8px;
-    height: 10rem;
+    bottom: -1rem;
+    top: 12rem;
     background-color: #000000;
 }
 .main-container-form div.main-donation-form div.main-donation-head {
     font-size: 1.8rem;
-    margin: 1rem;
+    margin-top: 3rem;
+    margin-bottom:4rem ;
     font-family: Quicksand, sans-serif;
     
 }
 
 .main-container-form div.main-donation-form form.donation-form p {
     font-size: 1.5rem;
-    margin: 1rem;
+    margin-left: 3rem;
     font-family: Arial, Helvetica, sans-serif;
 }
