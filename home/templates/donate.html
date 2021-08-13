@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -52,6 +53,22 @@
                     <div><input type="file" name="donation-form-attach-picture" placeholder="Attach a picture" class="input1 donation-form-attach-picture"></div><br>
                     <p>Expiry date</p>
                     <div><input type="date" name="donation-form-expiry-date" placeholder="Expiry date" class="input1 donation-form-expiry-date"></div><br>
+                    <p>Your location</p>
+                    <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var location = {lat:20.593683,lng:78.962883};
+                            var map = new google.maps.Map(document.getElementById("map"),{
+                                zoom:4,
+                                center:location
+                            });
+                            var marker = new google.maps.Marker({
+                                position:location,
+                                map:map
+                            });
+                        }   
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN7oD8a8janOOvNaw1pYbGZpK08hAfp8A&map_ids=8593e4886c9bbd54&callback=initMap"></script>
                 </form>
             </div>
         </div>
