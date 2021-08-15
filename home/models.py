@@ -8,7 +8,6 @@ class DonationForm(models.Model):
     email = models.EmailField(max_length=50)
     search_medicine = models.CharField(max_length=50)
     quantity = models.IntegerField()
-    picture = models.ImageField(upload_to="pics")
     expirydate = models.DateField()
     address = models.CharField(max_length=200)
     class Meta:
