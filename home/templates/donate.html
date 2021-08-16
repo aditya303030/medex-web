@@ -29,10 +29,10 @@
             </div> 
         </div>
         <div class="main-container-form">
+            <div class="main-donation-head" align="center">
+                ENTER SOME DETAILS AND START DONATING
+            </div>
             <div class="main-donation-form">
-                <div class="main-donation-head" align="center">
-                    ENTER SOME DETAILS AND START DONATING
-                </div>
                 <form method="POST" action="/donate/" class="donation-form">{%csrf_token%}
                     <p>NAME</p>
                     <div class="input-name"><input type="text" name="Name" placeholder="Enter your name" class="input1 donation-form-name"></div><br>
@@ -42,9 +42,6 @@
                     <div class="search-wrapper">
                         <div class="search-input">
                             <input type="text" name="search_medicine" placeholder="Type to search medicine" class="input1 donation-form-search-input">
-                            <!-- <div class="auto-complete-box">
-
-                            </div> -->
                         </div>
                     </div>
                     <p>Quantity</p>
@@ -55,7 +52,7 @@
                     <div class="input-date"><input type="date" name="expirydate" placeholder="Expiry date" class="input1 donation-form-expiry-date"></div><br>
                     <p>Your location</p>
                     <div class="input-location"><input type="text" name="address" placeholder="Address" class="input1 donation-form-address"></div>
-                    <div><input type="submit" value="Donate"></div>
+                    <div><input type="submit" value="Donate" class="donation-form-input-button"></div>
                     {%for message in messages%}
                         <h3>{{message}}</h3>
                     {% endfor %}

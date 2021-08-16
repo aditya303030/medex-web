@@ -87,20 +87,21 @@ body {
 .main-body h1 {
     font-family: Optima, sans-serif;
     font-size: 10rem;
-    margin-left: 8rem;
+    margin-left: 4rem;
     position: absolute;
-    margin-top: 15rem;
+    margin-top: 5rem;
     font-size:3.5rem;
+    /* transition-duration: 500ms; */
 }
 
 .main-body h2 {
     font-family:Verdana;
-    color: rgb(23, 149, 221);
+    color: #00909e;
     font-size: 16px;    
     margin-left: 40px;
     position: absolute;
-    margin-left: 8rem;
-    margin-top: 20rem;
+    margin-left: 4rem;
+    margin-top: 10rem;
     font-size: 1rem
 }
 
@@ -204,20 +205,25 @@ body {
 }
 
 .main-container-form div.main-donation-form {
-    margin: 20px auto 0px;
+    margin:20% ;
+    margin-top: 2rem;
     width: 90%;
-    max-width: 50rem;
+    max-width: 60rem;
+}
+
+.main-container-form div.main-donation-form form.donation-form input.input1{
+    width: 45rem;
 }
 
 .main-container-form div.main-donation-form::before {
     content: " ";
     position: absolute;
     width: 8px;
-    bottom: -1rem;
+    bottom: -13rem;
     top: 12rem;
     background-color: #000000;
 }
-.main-container-form div.main-donation-form div.main-donation-head {
+.main-container-form div.main-donation-head {
     font-size: 1.8rem;
     margin-top: 3rem;
     margin-bottom:4rem ;
@@ -231,7 +237,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-container-form div.main-donation-form form.donation-form input.input1.donation-form-address {
-    height: 10rem;
+.main-container-form div.main-donation-form form.donation-form input.input1.donation-form-address {    
     margin-bottom: 2rem;
+}
+
+.main-container-form div.main-donation-form form.donation-form input.donation-form-input-button {
+    width: 10rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(20, 86, 185);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
 }

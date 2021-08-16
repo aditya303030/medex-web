@@ -10,7 +10,7 @@ from django.contrib.auth.models import User,auth
 from django.contrib.auth import authenticate 
 from django.contrib import messages
 from .models import DonationForm
-from .forms import FormDonationForm
+from .forms import FormDonationForm    
 # Create your views here.
 
 def homepage(request):
@@ -26,8 +26,8 @@ def donate(request):
   donationform = FormDonationForm(request.POST or None)
   if donationform.is_valid():
     donationform.save()
-    context = {
-      'FormDonationForm':FormDonationForm
-    }
-    
-  return render(request,'donate.html',context)  
+    # context = {
+    #   'FormDonationForm':FormDonationForm
+    # }
+
+  return render(request,'donate.html',context={'FormDonationForm':FormDonationForm})  
