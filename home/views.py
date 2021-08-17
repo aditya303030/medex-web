@@ -1,3 +1,4 @@
+from django import template
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from django.core.checks import messages
@@ -11,6 +12,9 @@ from django.contrib.auth import authenticate
 from django.contrib import messages
 from .models import DonationForm
 from .forms import FormDonationForm    
+from django.core.mail import EmailMessage
+from django.conf import settings
+from django.template.loader import render_to_string
 # Create your views here.
 
 def homepage(request):
@@ -21,13 +25,9 @@ def about(request):
 
 def whypage(request):
   return render(request,'whypage.html',{})
-#Not working yet
-def donate(request):
+
+def donate(request):  
   donationform = FormDonationForm(request.POST or None)
   if donationform.is_valid():
     donationform.save()
-    # context = {
-    #   'FormDonationForm':FormDonationForm
-    # }
-
   return render(request,'donate.html',context={'FormDonationForm':FormDonationForm})  

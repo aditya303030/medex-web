@@ -7,8 +7,20 @@ from django.urls import reverse_lazy
 from django.contrib.auth.models import User,auth
 from django.contrib.auth import authenticate 
 from django.contrib import messages
+from django.core.mail import EmailMessage
+from django.conf import settings
+from django.template.loader import render_to_string
 # Create your views here.
 def register(request):
+    # template = render_to_string('home/email.html',{'Name':request.user.donate.username})
+    # email = EmailMessage(
+    # 'Sample Subkect',
+    # template,
+    # settings.EMAIL_HOST_USER,
+    # [request.user.register.email]
+    # )
+    # email.fail_silently = False
+    # email.send()
     if request.method =="POST":
         first_name = request.POST['first_name']
         last_name = request.POST['last_name']
@@ -36,6 +48,7 @@ def register(request):
         return render(request,'register.html',{})
 
 def login(request):
+    
     if request.method=="POST":
         username = request.POST['username']
         password = request.POST['password']
@@ -48,7 +61,7 @@ def login(request):
             return redirect('login')
     else:
         return render(request, 'login.html',{})
-
+    
 def logout(request):
     auth.logout(request)
     return redirect('/login')

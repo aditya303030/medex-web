@@ -37,18 +37,11 @@
           <h1 >Medex</h1>
           <h2>Take a step forward and help the ones in need.</h2>
         </div>
-      </div>
-      
-    </div>
-    <header>
-        <div class="form-container" align = 'center'>
-          <form method=POST class = 'form'> {%csrf_token%}
-            {% comment %} <div class = 'med med_name'>Medicine Name: {{medicineform.medicine_name}}</div>
-            <div class="med number_meds">Number of tablets: {{medicineform.number_of_tablets}}</div>
-            <div class="med exp_date">Expiry Date: {{medicineform.expiry_date}}</div> {% endcomment %}
-            {% comment %} <input type="submit" class="submit-button"> {% endcomment %}
-          </form>
+        <div class="main-body-content">
+          <h3>Total donations made</h3>
+          <p>{{donation_count}} donations made</p>
         </div>
-    </header>
+      </div>
+    </div>
   </body>
 </html>
