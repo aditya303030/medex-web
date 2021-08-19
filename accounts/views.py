@@ -10,17 +10,9 @@ from django.contrib import messages
 from django.core.mail import EmailMessage
 from django.conf import settings
 from django.template.loader import render_to_string
+
 # Create your views here.
 def register(request):
-    # template = render_to_string('home/email.html',{'Name':request.user.donate.username})
-    # email = EmailMessage(
-    # 'Sample Subkect',
-    # template,
-    # settings.EMAIL_HOST_USER,
-    # [request.user.register.email]
-    # )
-    # email.fail_silently = False
-    # email.send()
     if request.method =="POST":
         first_name = request.POST['first_name']
         last_name = request.POST['last_name']

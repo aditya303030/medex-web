@@ -12,3 +12,5 @@ class DonationForm(models.Model):
     address = models.CharField(max_length=200)
     class Meta:
         db_table="donationform"
+
+

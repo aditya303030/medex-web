@@ -15,10 +15,11 @@ from .forms import FormDonationForm
 from django.core.mail import EmailMessage
 from django.conf import settings
 from django.template.loader import render_to_string
-# Create your views here.
 
+# Create your views here.
 def homepage(request):
-  return render(request,'home.html',{})
+  donations_made = DonationForm.objects.all().count()
+  return render(request,'home.html',{'donations_made':donations_made})
 
 def about(request):
   return render(request,'about.html',{})
@@ -31,3 +32,4 @@ def donate(request):
   if donationform.is_valid():
     donationform.save()
   return render(request,'donate.html',context={'FormDonationForm':FormDonationForm})  
+
