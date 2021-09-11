@@ -83,69 +83,53 @@ body {
 }
 
 .main-body {
-    width: 100%;
-    display:inline;
-    /* justify-content: center;
-    align-items: center; */
+    margin: 1rem;
 }
 
-.main-body h1 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 10rem;
-    margin-left: 4rem;
-    position: absolute;
-    margin-top: 2rem;
-    font-size:3.5rem;
-    font-weight: normal;
-}
-
-.main-body h2 {
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: normal;
-    color: #09999e;  
-    margin-left: 40px;
-    position: absolute;
-    margin-left: 4rem;
-    margin-top: 6rem;
-    font-size: 1rem;
-}
-
-/* .body-content {
-    margin-top: 7rem;
-    margin-left: 4rem;
-    border-radius: 10px;
-    padding: 1rem;
-    
-    background-color:whitesmoke;
-    box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  0 100px 80px rgba(0, 0, 0, 0.07)
-} */
 .container-body {
-    height: 100%;
-    display: inline-flex;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }   
 
-.container-body div.body-content {
-    margin-top: 4rem;
-    margin-left: 4rem;
-    height: 10rem;
-    width: 43rem;
+.main-body-content {
+    margin-top: 3rem;
+    border: 2rem;
+    width: 40rem;
+    height: 50rem;
+    margin: 10px;
     border-radius: 10px;
-    /* padding-left: 1rem;
-    padding-top:1rem; */
     background-color:whitesmoke;
+    text-align: center;
     box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  0 100px 80px rgba(0, 0, 0, 0.07)
+  0 1.5px 5.3px rgba(0, 0, 0, 0.053),
+  0 4.9px 17.9px rgba(0, 0, 0, 0.077),
+  0 22px 80px rgba(0, 0, 0, 0.13)
+;
+}
+
+.main-body-content.sec1 {
+    width: 80rem;
+    height: 30rem;
+}
+
+.main-body-content.sec2 {
+    height: 30rem;
+}
+
+
+.main-body-content.sec2 {
+    height: 30rem;
+}
+
+.main-body-content h3 {
+    color: teal;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main-body-content img {
+    width: 100%;
 }
 
 .body-content h1{
@@ -303,37 +287,4 @@ body {
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
-}
-
-.main-body-content {
-    float: right;
-    margin-right: 0%;
-    margin-top: 4rem;
-    margin-left: 5%;
-    width: 35rem;
-    height: 20rem;
-    border-radius: 10px;
-    background-color:whitesmoke;
-    box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  0 100px 80px rgba(0, 0, 0, 0.07)
-;
-
-}
-
-.main-body-content h3 {
-    text-align: center;
-    font-family: monospace;
-    font-size: 1.2rem;
-    color: teal;
-}
-
-.main-body-content p {
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: teal;
 }

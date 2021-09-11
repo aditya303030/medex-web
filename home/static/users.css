@@ -9,7 +9,6 @@ body {
     padding: 5px;
 }
 .form-container-register{
-    /* margin-top: 1rem; */
     margin-top: 10%;
     margin-left: 35%;
     margin-right: 35%;
@@ -34,7 +33,6 @@ body {
     padding: 1rem;
 }
 .form-container-login {
-    /* margin-top: 1rem; */
     margin-top: 10%;
     margin-left: 35%;
     margin-right: 35%;
@@ -83,6 +81,7 @@ body {
     font-family: Noto Sans TC,sans-serif ;
     color: white;
     font-size: 1rem;
+    
 }
 
 .button:focus {
@@ -122,4 +121,7 @@ body {
 }
 .input1:focus::placeholder {
     color: transparent;
+}
+.input.button.submit-button-2 {
+    cursor: pointer;
 }
